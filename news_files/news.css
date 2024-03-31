@@ -1,0 +1,427 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap");
+:root {
+  --color_dark: #272829;
+  --color_lighter: #61677A;
+  --color: #D8D9DA;
+  --color_beige: #FFF6E0;
+  --color_text_ligth: #ffff;
+  --font-size-menu: 22px;
+  --border-radius: 5px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+main {
+  font-family: "Open Sans";
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 2000px;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+h2 {
+  margin-top: 2rem;
+}
+
+.top_section {
+  display: inline-flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  padding: 30px 90px;
+  background-color: var(--color);
+  color: var(--color_text_ligth);
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  border-bottom: 2px solid var(--color_dark);
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1em;
+}
+
+#logo {
+  height: 150px;
+  width: auto;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: var(--color_dark);
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+a:hover {
+  padding: 8px 8px;
+  border-radius: var(--border-radius);
+  border: none;
+  box-shadow: 2px 2px 2px;
+}
+
+/* .logo a{
+color: var(--black);
+ } */
+.logo a:hover {
+  box-shadow: none;
+}
+
+.log_in, .dropbtn {
+  padding: 8px 8px;
+  background-color: var(--color);
+  color: var(--color_dark);
+  border: 2px solid var(--color_dark);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.log_in:hover, .dropbtn:hover {
+  color: var(--color_lighter);
+  box-shadow: 2px 2px 2px;
+}
+
+/* kalbos keitimas */
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--color_lighter);
+  min-width: 30px;
+  border-radius: var(--border-radius);
+  color: var(--color_lighter);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: var(--color_dark);
+  background-color: var(--color_lighter);
+  border-radius: var(--border-radius);
+  padding: 6px 6px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: var(--color_lighter);
+  color: var(--color_dark);
+  border-radius: var(--border-radius);
+  box-shadow: 3px 3px 3px;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+  border-radius: var(--border-radius);
+}
+
+.middle_section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-left: 50px;
+  padding-right: 50px;
+  flex-wrap: nowrap;
+  background-image: url(../img/middle_section_background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.brands img {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  width: 100%;
+  height: auto;
+  padding: 30px 60px;
+  background-color: var(--color_dark);
+  color: var(--color_text_ligth);
+  /* text-align: left; */
+}
+
+.contacts {
+  text-align: left;
+}
+
+.icons_soc_media {
+  justify-content: space-evenly;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+a img {
+  width: 50px;
+  height: 50px;
+  fill: var(--color_text_ligth);
+}
+
+.submit_button {
+  padding: 8px 8px;
+  background-color: var(--color_lighter);
+  color: var(--color_text_ligth);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit_button:hover {
+  box-shadow: 12px, 12px, 12px black;
+}
+
+.mail_us {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  margin-left: auto;
+}
+
+#email_address {
+  line-height: 1.5em;
+  border: none;
+  border-radius: var(--border-radius);
+  max-width: 550px;
+  background-color: var(--color_dark);
+  color: var(--color_text_ligth);
+  border: 2px solid var(--color);
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+#your_message {
+  border: none;
+  border-radius: var(--border-radius);
+  background-color: var(--color_dark);
+  color: var(--color_text_ligth);
+  border: 2px solid var(--color);
+  /* margin-left: auto;
+  margin-right: auto;  */
+  margin-bottom: 20px;
+  max-width: 550px;
+  height: 100%;
+}
+
+#btn_submit {
+  line-height: 1, 5em;
+  max-width: 550px;
+  /* margin-left: auto;
+  margin-right: auto;  */
+  background-color: var(--color_dark);
+  color: var(--color_text_ligth);
+  border: 2px solid var(--color);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#email_address:hover {
+  background-color: var(--color);
+  color: var(--color_dark);
+  border: 2px solid var(--color);
+}
+
+#your_message:hover {
+  background-color: var(--color);
+  color: var(--color_dark);
+  border: 2px solid var(--color);
+}
+
+#btn_submit:hover {
+  background-color: var(--color);
+  color: var(--color_dark);
+  border: 2px solid var(--color);
+}
+
+@media screen and (max-width: 768px) {
+  .map {
+    display: none;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .top_section {
+    flex-direction: column;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  width: 100%;
+  height: auto;
+  padding: 30px 60px;
+  background-color: var(--color_dark);
+  color: var(--color_text_ligth);
+  /* text-align: left; */
+}
+
+.contacts {
+  text-align: left;
+}
+
+.icons_soc_media {
+  justify-content: space-evenly;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+a img {
+  width: 50px;
+  height: 50px;
+  fill: var(--color_text_ligth);
+}
+
+.submit_button {
+  padding: 8px 8px;
+  background-color: var(--color_lighter);
+  color: var(--color_text_ligth);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit_button:hover {
+  box-shadow: 12px, 12px, 12px black;
+}
+
+.mail_us {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  margin-left: auto;
+}
+
+#email_address {
+  line-height: 1.5em;
+  border: none;
+  border-radius: var(--border-radius);
+  max-width: 550px;
+  background-color: var(--color_dark);
+  color: var(--color_text_ligth);
+  border: 2px solid var(--color);
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+#your_message {
+  border: none;
+  border-radius: var(--border-radius);
+  background-color: var(--color_dark);
+  color: var(--color_text_ligth);
+  border: 2px solid var(--color);
+  /* margin-left: auto;
+  margin-right: auto;  */
+  margin-bottom: 20px;
+  max-width: 550px;
+  height: 100%;
+}
+
+#btn_submit {
+  line-height: 1, 5em;
+  max-width: 550px;
+  /* margin-left: auto;
+  margin-right: auto;  */
+  background-color: var(--color_dark);
+  color: var(--color_text_ligth);
+  border: 2px solid var(--color);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#email_address:hover {
+  background-color: var(--color);
+  color: var(--color_dark);
+  border: 2px solid var(--color);
+}
+
+#your_message:hover {
+  background-color: var(--color);
+  color: var(--color_dark);
+  border: 2px solid var(--color);
+}
+
+#btn_submit:hover {
+  background-color: var(--color);
+  color: var(--color_dark);
+  border: 2px solid var(--color);
+}
+
+@media screen and (max-width: 768px) {
+  .map {
+    display: none;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .top_section {
+    flex-direction: column;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=products.css.map */

@@ -1,0 +1,22 @@
+@media screen and (max-width: 640px){
+}
+@media screen and (max-width: 768px){
+.map{
+ display: none;
+}
+ 
+}
+@media screen and (max-width: 1000px){
+   .footer{
+ display: flex;
+ flex-direction: column;
+  text-align: center;
+}
+.top_section{
+   flex-direction: column;
+}
+ul{
+ display: flex;
+ flex-direction: column;
+}
+}

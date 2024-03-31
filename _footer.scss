@@ -1,0 +1,99 @@
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 30px;
+    width: 100%;
+    height: auto;
+    padding: 30px 60px;
+    background-color: var(--color_dark);
+    color: var(--color_text_ligth);
+    /* text-align: left; */
+}
+.contacts{
+text-align: left;
+}
+.icons_soc_media{
+justify-content: space-evenly;
+padding-top: 20px;
+padding-bottom: 20px;
+
+}
+a img  {
+width: 50px;
+height: 50px;
+fill: var(--color_text_ligth);
+}
+.submit_button{
+padding: 8px 8px;
+background-color: var(--color_lighter);
+color: var(--color_text_ligth);
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: 0.3s;
+}
+.submit_button:hover{
+box-shadow: 12px,  12px, 12px black;
+}
+.mail_us{
+display: flex;
+flex-direction: column;
+padding-left: 30px;
+padding-right: 30px;
+padding-bottom: 30px;
+margin-left: auto;
+}
+#email_address{
+line-height: 1.5em;
+border: none;
+border-radius: var(--border-radius);
+max-width: 550px;
+background-color: var(--color_dark);
+color: var(--color_text_ligth);
+border: 2px solid var(--color);
+/* margin-left: auto;
+margin-right: auto; */
+margin-bottom: 20px;
+text-align: left;
+
+}
+#your_message{
+border: none;
+border-radius: var(--border-radius);
+background-color: var(--color_dark);
+color: var(--color_text_ligth);
+border: 2px solid var(--color);
+/* margin-left: auto;
+margin-right: auto;  */
+margin-bottom: 20px;
+max-width: 550px;
+height: 100%;
+}
+#btn_submit{
+line-height: 1,5em;
+max-width: 550px;
+/* margin-left: auto;
+margin-right: auto;  */
+background-color: var(--color_dark);
+color: var(--color_text_ligth);
+border: 2px solid var(--color);
+border-radius: var(--border-radius);
+cursor: pointer;
+transition: 0.3s;
+}
+#email_address:hover{
+background-color: var(--color);
+color: var(--color_dark);
+border: 2px solid var(--color);
+}
+#your_message:hover{
+background-color: var(--color);
+color: var(--color_dark);
+border: 2px solid var(--color);
+}
+#btn_submit:hover{
+background-color: var(--color);
+color: var(--color_dark);
+border: 2px solid var(--color);
+}
